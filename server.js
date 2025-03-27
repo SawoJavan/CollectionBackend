@@ -2,7 +2,7 @@ const app=require('./indexo');
 const dotenv=require('dotenv');
 const mongoose=require('mongoose');
 dotenv.config({path:'./config.env'});
-const DB=process.env.LOCAL_DB;
+const DB=process.env.REMOTE_DB;
 console.log(DB);
 main().catch(err=>console.log(err));
 async function main(){
